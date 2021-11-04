@@ -7,12 +7,17 @@
 </head>
 
     <!-- regular image tag with a webp image format-->
-    <img src="img/autumn-coffee-md.webp" alt="autumn coffee" />    
+    <img src="img/autumn-leaves-in-wind-thumb.webp" alt="leaves blowing in the wind" />
 
     <!-- creating a fallback resource with webp 
         - not all browsers work well with webp format, so it's important to have fallback image type that works in all browsers suchy as jpgs, png, etc...
     -->
-    
+    <picture>
+        <source srcset="img/autumn-leaves-in-wind-md.webp" media="(min-width: 981px)"" type="image/webp"/>
+        <source srcset="img/autumn-leaves-in-wind-thumb.webp" type="image/webp"/>
+        <!-- fallback image if the browser does not support webp-->
+        <img src="img/autumn-leaves-in-wind.jpg" alt="autumn leaves" />
+    </picture>
 
     <!-- 
         - The use of the picture element can be used as fallback image, but also as to swap out images at different screen sizes
