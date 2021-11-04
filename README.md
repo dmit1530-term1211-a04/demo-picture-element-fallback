@@ -1,2 +1,3 @@
-# demo-picture-element-fallback
+# [DEMO] Picture Element Fallback
+
 Using the picture element to display fallback resources.
